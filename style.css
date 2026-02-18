@@ -1,0 +1,11 @@
+function send() {
+  let msg = document.getElementById("msg").value;
+  let chat = document.getElementById("chat");
+
+  if(msg=="") return;
+
+  chat.innerHTML += "<p><b>You:</b> " + msg + "</p>";
+  chat.innerHTML += "<p><b>AI:</b> Main seekh raha hoon 😊</p>";
+
+  document.getElementById("msg").value="";
+}
